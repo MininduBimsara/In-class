@@ -13,9 +13,11 @@ function hash(input) {
     hashedArray.push(intArray[i] % 3);
   }
 
-  return hashedArray;
+  const Result  = Number(hashedArray.join(''));
+
+  return Result;
 }
 
-const input = 1234567890;
-const hashedArray = hash(input);
-console.log(hashedArray);
+const input = 641974037132;
+const Result = hash(input);
+console.log(Result);
