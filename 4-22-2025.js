@@ -9,11 +9,13 @@ function hash(input) {
   }
 
   // Hash the array by modulating each element by 3
-  for (let i = 0; i < intArray.length; i++) {
-    hashedArray.push(intArray[i] % 3);
-  }
+//   for (let i = 0; i < intArray.length; i++) {
+//     hashedArray.push(intArray[i] % 3);
+//   }
 
-  const Result  = Number(hashedArray.join(''));
+  hashedArray = intArray.map((i) => i % 3);
+  
+  const Result = Number(hashedArray.join(""));
 
   return Result;
 }
